@@ -34,8 +34,8 @@ class WeatherModel {
 
 
   String getImage(){
-    if(weatherStateName == 'Clear')
-      return 'assets/images/suny.png';
+    if(weatherStateName == 'Clear' || weatherStateName == 'Sunny')
+      return 'assets/images/suny.jpg';
     else if (weatherStateName == 'Light Cloudy')
       return 'assets/images/sunny.png';
     else if (weatherStateName == 'Snow' || weatherStateName == 'Sleet' ||weatherStateName == 'Hail' )
